@@ -21,7 +21,7 @@ public class Tests
         });
         //page
         var page = await browser.NewPageAsync();
-        await page.GotoAsync($"http://192.168.129.83:8080/");
+        await page.GotoAsync($"http://localhost:8080/");
         
         // Wait for the page to load and click on user button
         await page.WaitForSelectorAsync("button.pi-user");
