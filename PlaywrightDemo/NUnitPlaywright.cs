@@ -14,7 +14,7 @@ public class NUnitPlaywright : PageTest
     public async Task Test1()
     {
         //the previous version of setting up the browser is removed
-        await Page.GotoAsync($"http://192.168.129.83:8080/");
+        await Page.GotoAsync($"http://localhost:8080/");
         
         // Wait for the page to load and click on user button
         await Page.WaitForSelectorAsync("button.pi-user");
